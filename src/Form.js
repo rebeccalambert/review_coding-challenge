@@ -3,13 +3,20 @@ import './Form.css';
 
 function Form(props) {
 
+
+  const update = () => {
+    console.log("something changed")
+  }
+
   return (
     <div className="form">
       <label className="form-label">Your feedback</label>
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        onChange={console.log("feedback changed")}
+        // onChange={console.log("feedback changed")}
+        onChange={update}
+
         placeholder="Let us know what we did well or could improve..."
       />
 
@@ -18,7 +25,7 @@ function Form(props) {
         type="number"
         name="party"
         min="1"
-        onChange={console.log('party changed')}
+        onChange={update}
         placeholder="2"
       />
 
