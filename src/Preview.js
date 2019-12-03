@@ -1,7 +1,7 @@
 import React from 'react';
 import './Preview.css';
 
-function Preview({guests, review}) {
+function Preview({guests, review, emoji}) {
 
   return (
     <section className="preview">
@@ -9,8 +9,7 @@ function Preview({guests, review}) {
       <div className="preview-content">
 
         <div className="preview-emoji">
-          😍
-          {/* Your emoji code goes here */}
+          {emoji}
         </div>
 
         <div className="preview-feedback">

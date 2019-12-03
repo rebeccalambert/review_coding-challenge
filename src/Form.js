@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Form.css';
+import 'emoji-mart/css/emoji-mart.css'
+import { Picker } from 'emoji-mart'
 
-function Form({ guests, review, updateInfo }) {
+function Form({ guests, review, emoji, updateInfo }) {
   
-  const update = (guests, newText) => {
-    updateInfo(guests, newText);
+  const update = (guests, newText, newEmoji) => {
+    updateInfo(guests, newText, newEmoji);
   }
 
   return (
@@ -14,7 +16,7 @@ function Form({ guests, review, updateInfo }) {
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        onChange={e => update(guests, e.target.value)}
+        onChange={e => update(guests, e.target.value, emoji)}
         placeholder="Let us know what we did well or could improve..."
       />
 
@@ -23,15 +25,14 @@ function Form({ guests, review, updateInfo }) {
         type="number"
         name="party"
         min="1"
-        onChange={e => update(e.target.value, review)}
+        onChange={e => update(e.target.value, review, emoji)}
         placeholder="2"
       />
       
 
       <label className="form-label">How was your meal?</label>
       <div>
-        *** Add Emoji selector ***
-        {/* Your Code goes here */}
+          <Picker set='apple' exclude='symbols, flags, activity, places, objects, recent' onClick={(newEmoji, e) => update(guests, review, newEmoji.native)} />
       </div>
 
     </div>
