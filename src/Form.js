@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
 import './Form.css';
 
-function Form(props) {
-
-  const [people, setPeople] = useState(1)
+function Form({ guests, review, updateInfo }) {
   
-  const update = () => {
-    // console.log("something changed")
-    // let guests = document.getElementsByClassName("form-input")[0].value
-    // // console.log(guests)
-    // setPeople(guests)
-    // // console.log(guests)
+  const update = (guests, newText) => {
+    updateInfo(guests, newText);
   }
 
   return (
     <div className="form">
+      
       <label className="form-label">Your feedback</label>
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        onChange={update}
-
+        onChange={e => update(guests, e.target.value)}
         placeholder="Let us know what we did well or could improve..."
       />
 
@@ -29,17 +23,17 @@ function Form(props) {
         type="number"
         name="party"
         min="1"
-        onChange={update}
+        onChange={e => update(e.target.value, review)}
         placeholder="2"
       />
+      
 
       <label className="form-label">How was your meal?</label>
       <div>
-
         *** Add Emoji selector ***
         {/* Your Code goes here */}
-
       </div>
+
     </div>
   );
 }

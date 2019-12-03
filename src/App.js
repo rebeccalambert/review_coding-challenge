@@ -6,16 +6,10 @@ import Preview from './Preview.js';
 
 function App() {
 
-  const [info, setInfo] = useState([
-    {number: ""},
-    {text: ""}
-  ]);
+  const [info, setInfo] = useState(["2", "Let us know what we did well or could improve..."]);
 
-  const updateInfo = (num, newText) => {
-    const newInfo = [
-      {number: num},
-      {text: newText}
-    ]
+  const updateInfo = (guests, newText) => {
+    const newInfo = [guests, newText]
     setInfo(newInfo);
   }
 
@@ -25,10 +19,10 @@ function App() {
 
       <main className="app-main">
         <section className="app-left">
-          <Form updateInfo={updateInfo}/>
+          <Form guests={info[0]} review={info[1]} updateInfo={updateInfo} />
         </section>
         <section className="app-right">
-          <Preview guests={info.number} review={info.text} />
+          <Preview guests={info[0]} review={info[1]} />
         </section>
       </main>
     </div>
