@@ -17,7 +17,7 @@ function Preview({guests, review, emoji}) {
         </div>
 
         <div className="preview-party">
-          {guests} people dined here.
+          <p className="num-guests">{guests}</p> people dined here.
         </div>
 
       </div>

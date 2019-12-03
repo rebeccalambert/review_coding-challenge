@@ -2,3 +2,51 @@
   width: 480px;
   margin-top: 3rem;
 }
+
+.preview-label {
+  margin-bottom: 0.5rem;
+}
+
+.preview-content {
+  background: #ffffff;
+  box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  justify-content: space-around;
+  
+  /* For if text is very long, it won't stretch the div */
+  overflow: scroll; 
+  min-height: 254px;
+}
+
+
+.preview-emoji {
+  background: #FFFFFF;
+  border: 8px solid #000000;
+  box-sizing: border-box;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.preview-feedback {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.preview-party {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.num-guests {
+  color: rgba(0, 0, 0, 0.2);
+  margin-right: 3px
+}
