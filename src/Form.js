@@ -6,7 +6,7 @@ import { Picker } from 'emoji-mart'
 function Form({ guests, review, emoji, updateInfo }) {
   
   const update = (guests, newText, newEmoji) => {
-    updateInfo(guests, newText, newEmoji.native);
+    updateInfo(guests, newText, newEmoji);
   }
 
   return (
@@ -32,7 +32,7 @@ function Form({ guests, review, emoji, updateInfo }) {
 
       <label className="form-label">How was your meal?</label>
       <div>
-          <Picker set='emojione' exclude='symbols, flags, activity, places, objects, recent' onClick={(newEmoji, e) => update(guests, review, newEmoji)} />
+          <Picker set='apple' exclude='symbols, flags, activity, places, objects, recent' onClick={(newEmoji, e) => update(guests, review, newEmoji.native)} />
       </div>
 
     </div>
