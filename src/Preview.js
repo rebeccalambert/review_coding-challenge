@@ -18,7 +18,9 @@ function Preview(props) {
           {/* Dynamic feedback goes here */}
         </div>
         <div className="preview-party">
-          2 {/* Dynamic party code goes here */} people dined here.
+          {console.log(props)}
+          {/* {document.getElementsByClassName("form-input")[0].value}  */}
+          2 people dined here.
         </div>
       </div>
     </section>

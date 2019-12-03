@@ -3,9 +3,14 @@ import './Form.css';
 
 function Form(props) {
 
-
+  const [people, setPeople] = useState(1)
+  
   const update = () => {
     console.log("something changed")
+    let guests = document.getElementsByClassName("form-input")[0].value
+    // console.log(guests)
+    setPeople(guests)
+    console.log(guests)
   }
 
   return (
@@ -14,7 +19,6 @@ function Form(props) {
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        // onChange={console.log("feedback changed")}
         onChange={update}
 
         placeholder="Let us know what we did well or could improve..."
