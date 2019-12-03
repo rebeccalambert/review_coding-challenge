@@ -13,7 +13,7 @@
   width: 480px;
   display: flex;
   flex-direction: column;
-  padding: 24px 32px;
+  padding: 0.5rem 2rem;
   justify-content: space-around;
   
   /* For if text is very long, it won't stretch the div */
