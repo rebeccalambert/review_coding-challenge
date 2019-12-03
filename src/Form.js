@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Form.css';
+import 'emoji-mart/css/emoji-mart.css'
+import { Picker } from 'emoji-mart'
 
 function Form({ guests, review, updateInfo }) {
   
@@ -30,8 +32,7 @@ function Form({ guests, review, updateInfo }) {
 
       <label className="form-label">How was your meal?</label>
       <div>
-        *** Add Emoji selector ***
-        {/* Your Code goes here */}
+          <Picker set='emojione' exclude='symbols, flags, activity, places, objects, recent' />
       </div>
 
     </div>
