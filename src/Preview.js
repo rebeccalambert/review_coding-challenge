@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Preview.css';
 
 function Preview(props) {
+  // updateGuests((numGuests) => {
+  //   // let guests = document.getElementsByClassName("form-input")[0].value
+  //   console.log(numGuests)
+  //   // document.getElementsByClassName("preview-party")[0].innerHTML = `${guests} people dined here.`
+  // })
+
+  // useEffect(() => {
+  //   let guests = document.getElementsByClassName("form-input")[0].value
+  //   document.getElementsByClassName("preview-party")[0].innerHTML = `${guests} people dined here.`})
+  // }, [document.getElementsByClassName("preview-party")[0].innerHTML])
 
   return (
     <section className="preview">
@@ -18,7 +28,6 @@ function Preview(props) {
           {/* Dynamic feedback goes here */}
         </div>
         <div className="preview-party">
-          {console.log(props)}
           {/* {document.getElementsByClassName("form-input")[0].value}  */}
           2 people dined here.
         </div>

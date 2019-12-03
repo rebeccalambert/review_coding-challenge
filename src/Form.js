@@ -6,11 +6,11 @@ function Form(props) {
   const [people, setPeople] = useState(1)
   
   const update = () => {
-    console.log("something changed")
-    let guests = document.getElementsByClassName("form-input")[0].value
-    // console.log(guests)
-    setPeople(guests)
-    console.log(guests)
+    // console.log("something changed")
+    // let guests = document.getElementsByClassName("form-input")[0].value
+    // // console.log(guests)
+    // setPeople(guests)
+    // // console.log(guests)
   }
 
   return (
