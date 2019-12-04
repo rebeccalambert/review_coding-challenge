@@ -1,6 +1,7 @@
 .app {
-  position: fixed;
-}
+overflow-x: hidden;
+} 
+
 
 .app-main {
   display: flex;
@@ -30,11 +31,10 @@
     flex-direction: column-reverse;
   }
 
-  .app-left {
+  /* .app-left {
     display: flex;
     justify-content: center;
-    /* flex: 0 0 50%; */
-  }
+  } */
   
   .app-right {
     min-height: 40vh;
