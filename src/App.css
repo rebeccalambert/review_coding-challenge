@@ -19,6 +19,27 @@
 
 
 
+@media screen and (max-width:380px) {
+  .app-main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  .app-left {
+    display: flex;
+    justify-content: center;
+    /* flex: 0 0 50%; */
+  }
+  
+  .app-right {
+    display: flex;
+    justify-content: center;
+    /* flex: 0 0 50%; */
+    /* background: #F8FBFD; */
+    min-height: 40vh;
+  }
+
+}
  
 
