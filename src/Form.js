@@ -29,7 +29,6 @@ function Form({ guests, review, emoji, updateInfo }) {
         placeholder="2"
       />
       
-
       <label className="form-label">How was your meal?</label>
       <div>
           <Picker set='apple' exclude='symbols, flags, activity, places, objects, recent' onClick={(newEmoji, e) => update(guests, review, newEmoji.native)} />

@@ -29,7 +29,6 @@
 }
 
 
-
 @media screen and (max-width:380px) {
   .form {
     width: auto;
@@ -48,5 +47,4 @@
   .form-input {
     margin-bottom: 1.5rem;
   }
-
 }

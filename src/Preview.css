@@ -16,11 +16,11 @@
   padding: 0.5rem 2rem;
   justify-content: space-around;
   
-  /* For if text is very long, it won't stretch the div */
-  /* overflow: scroll;  */
+  /* If text is long and/or no spaces, it won't stretch the div strangely */
+  overflow-x: scroll; 
   min-height: 254px;
+  margin-bottom: 1rem;
 }
-
 
 .preview-emoji {
   background: #FFFFFF;
@@ -34,14 +34,12 @@
   align-items: center;
   font-size: 40px;
   margin-bottom: 5px;
-
 }
 
 .preview-feedback {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.25);
 }
-
 
 .preview-party {
   font-size: .75rem;
@@ -73,6 +71,5 @@
   .preview-feedback {
     font-size: 1.25rem;
   }
-
 }
  
