@@ -10,17 +10,17 @@
 .preview-content {
   background: #ffffff;
   box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
-  width: 480px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0.5rem 2rem;
   justify-content: space-around;
   
-  /* For if text is very long, it won't stretch the div */
-  overflow: scroll; 
+  /* If text is long and/or no spaces, it won't stretch the div strangely */
+  overflow-x: scroll; 
   min-height: 254px;
+  margin-bottom: 1rem;
 }
-
 
 .preview-emoji {
   background: #FFFFFF;
@@ -33,13 +33,13 @@
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  margin-bottom: 5px;
 }
 
 .preview-feedback {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.25);
 }
-
 
 .preview-party {
   font-size: .75rem;
@@ -51,3 +51,25 @@
   color: rgba(0, 0, 0, 0.2);
   margin-right: 3px
 }
+
+
+@media screen and (max-width:380px) {
+  .preview {
+    width: 100vw;
+    margin: 3rem .75rem;
+  }
+  
+  .preview-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .preview-content {
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
+  
+  .preview-feedback {
+    font-size: 1.25rem;
+  }
+}
+ 

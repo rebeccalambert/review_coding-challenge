@@ -1,7 +1,10 @@
+.app {
+overflow-x: hidden;
+} 
+
 .app-main {
   display: flex;
 }
-
 
 .app-left {
   display: flex;
@@ -18,7 +21,16 @@
 }
 
 
-
-
+@media screen and (max-width:380px) {
+  .app-main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .app-right {
+    min-height: 40vh;
+  }
+}
  
 
