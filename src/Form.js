@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Form.css';
 import 'emoji-mart/css/emoji-mart.css'
 import { Picker } from 'emoji-mart'
