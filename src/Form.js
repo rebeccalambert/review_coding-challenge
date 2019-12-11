@@ -1,7 +1,6 @@
 import React from 'react';
 import './Form.css';
-// import 'emoji-mart/css/emoji-mart.css'
-// import { Picker } from 'emoji-mart'
+import Emoji from "./Emojis";
 
 function Form({ guests, review, emoji, updateInfo }) {
   
@@ -31,7 +30,7 @@ function Form({ guests, review, emoji, updateInfo }) {
       
       <label className="form-label">How was your meal?</label>
       <div>
-          {/* <Picker set='apple' onClick={(newEmoji, e) => update(guests, review, newEmoji.native)} /> */}
+          <Emoji />
       </div>
 
     </div>
