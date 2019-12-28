@@ -8,13 +8,14 @@
 }
 
 .preview-content {
-  background: #ffffff;
-  box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
   max-width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0.5rem 2rem;
   justify-content: space-around;
+
+  background: #ffffff;
+  box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
   
   /* If text is long and/or no spaces, it won't stretch the div strangely */
   overflow-x: scroll; 
@@ -23,10 +24,6 @@
 }
 
 .preview-emoji {
-  background: #FFFFFF;
-  border: 8px solid #000000;
-  box-sizing: border-box;
-  border-radius: 100%;
   width: 80px;
   height: 80px;
   display: flex;
@@ -34,6 +31,11 @@
   align-items: center;
   font-size: 40px;
   margin-bottom: 5px;
+  
+  background: #FFFFFF;
+  border: 8px solid #000000;
+  box-sizing: border-box;
+  border-radius: 100%;
 }
 
 .preview-feedback {
