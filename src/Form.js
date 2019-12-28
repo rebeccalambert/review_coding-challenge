@@ -30,7 +30,7 @@ function Form({ guests, review, emoji, updateInfo }) {
       
       <label className="form-label">How was your meal?</label>
       <div>
-          <Emoji />
+          <Emoji update={update} guests={guests} review={review}/>
       </div>
 
     </div>
