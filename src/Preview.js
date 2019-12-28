@@ -1,7 +1,7 @@
 import React from 'react';
 import './Preview.css';
 
-function Preview({guests, review, emoji}) {
+function Preview({ guests, review, emoji }) {
 
   return (
     <section className="preview">
