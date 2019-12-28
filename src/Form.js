@@ -29,10 +29,8 @@ function Form({ guests, review, emoji, updateInfo }) {
       />
       
       <label className="form-label">How was your meal?</label>
-      <div>
-          <Emoji update={update} guests={guests} review={review}/>
-      </div>
-
+      <Emoji update={update} guests={guests} review={review}/>
+  
     </div>
   );
 }
