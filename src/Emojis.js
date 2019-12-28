@@ -10,10 +10,9 @@ function Emojis({ update, guests, review }) {
     });
 
     const removeHighlight = () => {
-        let els = document.getElementsByClassName('emoji')
-        for (let i = 0; i < els.length; i++) {
-            els[i].style.cssText = 'text-shadow: none;'
-        }
+       Array.from(document.getElementsByClassName('emoji')).forEach( emoji => {
+            emoji.style.cssText = 'text-shadow: none'
+        })
     }
 
     const newEmoji = (e) => {        
