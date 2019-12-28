@@ -36,6 +36,5 @@ Design Reference: [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC
 # Emoji Selector
 
 - I wanted to keep the emoji selector simple and similar to what users are already familiar with, so these were my thoughts as I went through implementing / styling the selector:
-    - I was debating separating out objects and faces into two different categories, but that seemed like it would make the interface more confusing, possibly making the user think that you can actually choose two different emojis, or that there was something different about the second set of emojis. That's why I just kept them in one list. 
-    - I sized the emoji box so that it displays half of the next row to indicate that you can scroll down. 
-    - I added a button click effect on the mobile version so that users have feedback that they actually selected the emoji since they can't see the preview without scrolling up. I didn't add it on the desktop version because there is already the hover effect, and the user can see on the preview side that they did successfully select the emoji. 
+    - I sized the emoji box so that it displays half of the last row to indicate that you can scroll down. 
+    - For the mobile version, I added a gold highlight and click effect on the selected emoji so that users have feedback that they actually selected the emoji since they can't see the preview without scrolling up. I didn't add the button click effect on the desktop version because it looked a little messy with the zoom in on hover. Plus, the user can see from the highlight and on the preview side that they did successfully select the emoji. 
