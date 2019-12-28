@@ -1,0 +1,45 @@
+.emoji-list {
+    height: 250px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow: scroll;
+    
+    background: #F8FBFD;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.emoji {
+    font-size: 1.5rem;
+    padding: 8px;
+    transition: transform .3s ease;
+}
+
+
+@media screen and (min-width: 380px) {
+    .emoji:hover {
+        font-size: 2rem;
+        z-index: 2;
+        padding: 0px 4.5px;
+        transform: scale(1.5);
+    }
+}
+
+
+@media screen and (max-width:380px) {
+    .emoji-list {
+        height: 165px;
+        width: 90%;
+    }
+    
+    .emoji {
+        padding: 4px;
+        transition: transform .1s ease;
+    }
+    
+    .emoji:active {
+        transform: translateY(3px);
+    }
+}

@@ -9,6 +9,7 @@
 }
 
 .form-textarea {
+  max-width: 100%;
   width: 100%;
   font-size: 1.25rem;
   padding: 1rem;
@@ -31,7 +32,7 @@
 
 @media screen and (max-width:380px) {
   .form {
-    width: auto;
+    width: 300px;
     margin: 2rem 0;
   }
   
